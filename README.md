@@ -1,11 +1,13 @@
 # Java-PracticeCode
 
-				JAVA TUTORIAL
+				***************************JAVA TUTORIAL************************
+				
+-extention use to save file is .java
 -javac filename.java
--
+-java filename
 
-Access specifier in java=4types 
-public/private/protected/default but in c/c++ only 3types 
+Access specifier in javais of 4 types 
+public,private,protected,default but in c/c++ only 3 types 
 
 int x=3;
 float x=5.2f			//end with f
@@ -35,8 +37,52 @@ OVERRIDING
  diff class and by extend we override parent fun and use child f1
 
 ABSTRACT
--we cant make object of a class (y we need ex Person and Student ,Facult extend Person)
+-we cant make object of a abstract class (y we need ex Person and Student ,Facult extend Person)
  so we dnt need to make obj of person class;
 -abstrach class we have than we can have abstract method or no abstact methd but
  if we have abstract METHod present in class than we have to make (or write keyword)
  abstract before class.(othws error)
+
+INTERFACE
+-instead of writing class we write interface
+-we cant make object of interface
+-in interface if we make any method inside that than by default it will be abstract and public
+-varible inside is by default is pubic static final   
+-to inherit interface we use implements(instead of extend) to use  
+-class to interface or vice  versa we use (implements)
+-class to class or interface to interface we use (extends)
+
+SORT
+-run Collections.sort(arr)
+
+
+ 
+ 
+						*********************  	CODES TO LEARN CONCEPTS     *************************
+ 
+ 1.INTERFACE CONCEPT
+ 
+Interface I1
+{void f1()}
+Interface I2
+{void f2()}
+class A implements I1,I2
+{
+void f1() {  } 
+void f2() {  }
+void f3() {  }
+
+}
+public class Example
+{
+ public static void main(string [] args)
+ { 
+ I2 obj =new A()
+ obj.f1();  // error I2 refrence can refer I1 methds
+ obj.f2();  
+ obj.f3();  // error its in class not in I2
+ }
+}
+
+ 
+ 
